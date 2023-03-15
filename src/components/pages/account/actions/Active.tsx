@@ -8,7 +8,7 @@ const Actions: React.FC = () => {
 
   return (
     <div className="actions">
-      <h1 style={{ marginLeft: "40px" }}>My actives</h1>
+      <h1 style={{ marginLeft: "20px" }}>My actives</h1>
 
       <div>
         {actions.map((el) => (
