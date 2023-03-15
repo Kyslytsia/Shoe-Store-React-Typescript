@@ -2,3 +2,20 @@
   background-color: white;
   padding: 200px 0;
 }
+
+.log-registr-body {
+  width: 30%;
+  margin: 0 auto;
+}
+
+@media (min-width: 375px) and (max-width: 700px) {
+  .log-registr-body {
+    width: 350px;
+  }
+}
+
+@media (min-width: 701px) {
+  .log-registr-body {
+    width: 470px;
+  }
+}

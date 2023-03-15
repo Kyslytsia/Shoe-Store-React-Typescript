@@ -16,6 +16,8 @@ const CastomTabs = styled(Tabs)({
   },
 });
 
+const CastomBox = styled(Box)({});
+
 interface TabPanelProps {
   children?: React.ReactNode;
   index: number;
@@ -58,7 +60,7 @@ function LoginRegistrationBody() {
 
   return (
     <div className="RegistrationBody">
-      <Box sx={{ width: "30%", margin: "0 auto" }}>
+      <CastomBox className="log-registr-body">
         <Box sx={{ borderBottom: 1, borderColor: "#d1d5d5" }}>
           <CastomTabs
             value={value}
@@ -87,7 +89,7 @@ function LoginRegistrationBody() {
         <TabPanel value={value} index={1}>
           <Registration />
         </TabPanel>
-      </Box>
+      </CastomBox>
     </div>
   );
 }
