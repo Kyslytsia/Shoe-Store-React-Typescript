@@ -19,7 +19,7 @@ const ActiveItem: React.FC<types.actionsItemProps> = ({
           backgroundSize: "cover",
           backgroundPosition: "center",
           height: "200px",
-          width: "150px",
+          width: "140px",
         }}
       ></div>
       <div className="active-item__info">

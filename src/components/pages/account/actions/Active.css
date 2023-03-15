@@ -8,15 +8,3 @@
   flex-wrap: wrap;
   display: flex;
 }
-
-@media (min-width: 1401px) {
-  .actions div {
-    flex-wrap: wrap;
-  }
-}
-
-@media (min-width: 1401px) {
-  .actions div {
-    flex-wrap: wrap;
-  }
-}
