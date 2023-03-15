@@ -23,11 +23,14 @@ const ActiveItem: React.FC<types.actionsItemProps> = ({
         }}
       ></div>
       <div className="active-item__info">
-        <h1>{name}</h1>
-        <div>size: {shoeSize}</div>
-        <div>quantity: {count}</div>
-        <div>price: {price}$</div>
-        <div>total price: {totalPrice}$</div>
+        <div className="info-name">{name}</div>
+
+        <div>
+          <div>size: {shoeSize}</div>
+          <div>quantity: {count}</div>
+          <div>price: {price}$</div>
+          <div>total price: {totalPrice}$</div>
+        </div>
       </div>
     </div>
   );

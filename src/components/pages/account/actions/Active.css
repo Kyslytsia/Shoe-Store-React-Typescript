@@ -4,16 +4,19 @@
   margin: 20px;
 }
 
+.actions div {
+  flex-wrap: wrap;
+  display: flex;
+}
+
 @media (min-width: 1401px) {
   .actions div {
     flex-wrap: wrap;
-    display: flex;
   }
 }
 
 @media (min-width: 1401px) {
   .actions div {
     flex-wrap: wrap;
-    display: flex;
   }
 }
