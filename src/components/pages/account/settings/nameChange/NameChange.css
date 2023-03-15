@@ -1,0 +1,8 @@
+.nameChange {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.nameChange h2 {
+  color: #2b2f4c;
+}

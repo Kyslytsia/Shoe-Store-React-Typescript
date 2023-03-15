@@ -1,0 +1,220 @@
+.about-us {
+  background-color: #f3f5f5;
+  margin: 0;
+  padding: 50px 100px;
+  font-family: "Montserrat";
+}
+.about-us__block-1 {
+  padding: 50px;
+}
+.about-us__block-1 h1 {
+  color: #2b2f4c;
+  text-align: center;
+  margin-top: 50px;
+}
+.about-us__block-1 div {
+  color: #2b2f4c;
+  text-align: center;
+  padding: 0 200px;
+}
+
+.about-us__block-2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 100px;
+}
+.about-us__block-2__image {
+  background-image: url("https://mrcobbler.ancorathemes.com/wp-content/uploads/2021/11/background-4-740x416.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 48%;
+  height: 350px;
+}
+.about-us__block-2__info {
+  width: 48%;
+}
+.about-us__block-2__info h2,
+p {
+  color: #2b2f4c;
+}
+
+.about-us__block-3 h2 {
+  color: #2b2f4c;
+  text-align: center;
+  padding: 30px 0 50px 0;
+}
+.about-us__block-3__cards {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+.cards__card {
+  height: 500px;
+  width: 30%;
+  border: 5px solid white;
+  border-radius: 5px;
+  background-color: white;
+}
+.card__image {
+  background-position: center;
+  background-size: cover;
+  height: 350px;
+}
+.image-1 {
+  background-image: url("https://mrcobbler.ancorathemes.com/wp-content/uploads/2016/10/background-5.jpg");
+}
+.image-2 {
+  background-image: url("https://www.qest.org.uk/wp-content/uploads/2021/11/Olu-Fadairo.-Photo-credit-Julian-Calder-2.jpg");
+}
+.image-3 {
+  background-image: url("http://s3.amazonaws.com/liftclient-offloading/dawsons/wp-content/uploads/2017/10/dawson-shoe-repair-leather-conditioning.jpg");
+}
+.card__info {
+  color: #2b2f4c;
+  text-align: center;
+}
+.card__info h4 {
+  margin-top: 30px;
+}
+
+@media (min-width: 375px) and (max-width: 700px) {
+  .about-us {
+    padding: 0;
+  }
+
+  .about-us__block-1 div {
+    padding: 0;
+  }
+
+  .about-us__block-2 {
+    padding: 0;
+  }
+
+  .about-us__block-2__info {
+    padding: 0 40px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .about-us__block-2__image {
+    display: none;
+  }
+
+  .about-us__block-3__cards {
+    flex-direction: column;
+    padding: 0;
+    margin: 0 auto;
+    width: 375px;
+  }
+
+  .cards__card {
+    width: 350px;
+    height: 470px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1000px) {
+  .about-us {
+    padding: 0;
+  }
+
+  .about-us__block-1 div {
+    padding: 0 40px;
+  }
+
+  .about-us__block-2 {
+    padding: 0 40px;
+  }
+
+  .about-us__block-2__info {
+    padding: 0 40px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .about-us__block-2__image {
+    display: none;
+  }
+
+  .about-us__block-3__cards {
+    flex-direction: column;
+    padding: 0;
+    margin: 0 auto;
+    width: 500px;
+  }
+
+  .cards__card {
+    width: 500px;
+    height: 700px;
+    margin-bottom: 30px;
+  }
+  .image-1,
+  .image-2,
+  .image-3 {
+    height: 570px;
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1700px) {
+  .about-us__block-1 div {
+    padding: 0;
+  }
+
+  .about-us__block-2 {
+    padding: 0 40px;
+  }
+
+  .about-us__block-2__info {
+    padding: 0 40px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .about-us__block-2__image {
+    height: 370px;
+  }
+
+  .about-us__block-3__cards {
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1700px) {
+  .about-us {
+    padding: 50px 200px;
+  }
+}
+
+@media (min-width: 1801px) and (max-width: 2700px) {
+  .about-us__block-1 div {
+    width: 1605px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .about-us__block-2 {
+    width: 1605px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .about-us__block-3__cards {
+    width: 1605px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .cards__card {
+    width: 500px;
+    height: 800px;
+    margin-bottom: 30px;
+  }
+  .image-1,
+  .image-2,
+  .image-3 {
+    height: 670px;
+  }
+}

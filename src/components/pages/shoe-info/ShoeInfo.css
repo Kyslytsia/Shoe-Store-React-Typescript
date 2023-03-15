@@ -1,0 +1,178 @@
+.shoe-info {
+  padding: 150px 250px 40px;
+  background-color: #f3f5f5;
+}
+
+.shoe-block {
+  display: flex;
+  color: #2b2f4c;
+}
+
+.shoe-block__img {
+  color: #2b2f4c;
+  height: 600px;
+  width: 45%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 6px 0 0 6px;
+}
+
+.shoe-block__info {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  width: 54%;
+  padding: 30px;
+  border-radius: 0 6px 6px 0;
+}
+
+.size-block {
+  background-color: #f3f5f5;
+  border-radius: 6px;
+  padding: 2px 20px;
+  margin: 20px 0;
+}
+
+.size {
+  display: flex;
+  padding: 20px 0;
+}
+
+.size span {
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  display: inline-block;
+  color: #111;
+  background: #fff;
+  margin: 0 5px;
+  transition: 0.5s;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.buy-block h2 {
+  color: #2b2f4c;
+}
+
+.buy-block .button {
+  width: 100px;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  font-weight: 700;
+  border-radius: 4px;
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+.block {
+  background-color: #f3f5f5;
+  border-radius: 6px;
+  padding: 5px 20px;
+}
+
+@media (min-width: 375px) and (max-width: 900px) {
+  .shoe-info {
+    padding: 90px 30px;
+  }
+  .shoe-block {
+    flex-direction: column;
+    padding: 0;
+    width: 334px;
+    margin: 0 auto;
+  }
+
+  .shoe-block__img {
+    width: 100%;
+    border-radius: 4px;
+    height: 350px;
+  }
+
+  .shoe-block__info {
+    width: 100%;
+  }
+
+  .size h3 {
+    display: none;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 700px) {
+  .block {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .block .button {
+    margin: 0 0 10px;
+    order: 2;
+  }
+
+  .block h2 {
+    order: 1;
+    margin: 0 0 10px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 900px) {
+  .shoe-block {
+    width: 450px;
+  }
+
+  .shoe-block__img {
+    min-height: 500px;
+  }
+
+  .size h3 {
+    display: block;
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 900px) {
+  .shoe-block {
+    width: 550px;
+  }
+
+  .shoe-block__img {
+    min-height: 650px;
+  }
+
+  .size h3 {
+    display: block;
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1500px) {
+  .shoe-info {
+    padding: 90px 30px;
+  }
+
+  .shoe-block {
+    width: 901px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1501px) {
+  .shoe-info {
+    padding: 90px 30px;
+  }
+
+  .shoe-block {
+    width: 1200px;
+    margin: 0 auto;
+    height: 700px;
+  }
+
+  .shoe-block__img {
+    height: 700px;
+  }
+}

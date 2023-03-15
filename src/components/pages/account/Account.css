@@ -1,0 +1,23 @@
+.tab {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  margin: 0 auto;
+}
+
+@media (min-width: 375px) and (max-width: 700px) {
+  .custom-box-main {
+    flex-direction: column;
+  }
+
+  .custom-tabs {
+    width: 100%;
+  }
+}
+
+@media (min-width: 701px) {
+  .custom-tabs {
+    width: 300px;
+  }
+}

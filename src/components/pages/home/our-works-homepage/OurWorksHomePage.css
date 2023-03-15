@@ -1,0 +1,242 @@
+.our-work-conteiner {
+  background-color: white;
+  padding: 30px 160px;
+}
+.our-work-title {
+  margin: 0;
+  color: #2b2f4c;
+  font-family: Montserrat;
+  text-align: center;
+}
+.our-work-block {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+}
+.our-work-block__winter-fall,
+.our-work-block__spring,
+.our-work-block__summer {
+  width: 32%;
+}
+.our-work-block__winter-fall-img {
+  height: 500px;
+  background-image: url("https://i.pinimg.com/564x/bf/4b/a1/bf4ba1763c09850de91fa22c3c61dab1.jpg");
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 40px;
+  border-radius: 4px;
+}
+.our-work-block__spring-img {
+  height: 500px;
+  background-image: url("https://i.pinimg.com/564x/07/12/a3/0712a3f98e65b19f8f25ad4e6e92f20c.jpg");
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 40px;
+  border-radius: 4px;
+}
+.our-work-block__summer-img {
+  height: 500px;
+  background-image: url("https://i.pinimg.com/564x/07/12/a3/0712a3f98e65b19f8f25ad4e6e92f20c.jpg");
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 40px;
+  border-radius: 4px;
+}
+.our-work-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 150px;
+  background-color: white;
+  border: 1px solid #2b2f4c;
+  border-radius: 4px;
+  color: #2b2f4c;
+  margin: 0 auto;
+  font-family: Montserrat;
+  cursor: pointer;
+}
+.color {
+  color: #2b2f4c;
+}
+
+@media (min-width: 375px) and (max-width: 600px) {
+  .our-work-conteiner {
+    padding: 0 30px 40px;
+  }
+
+  .our-work-title {
+    margin: 30px 0;
+  }
+
+  .our-work-block {
+    flex-direction: column;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .our-work-block__winter-fall-img,
+  .our-work-block__spring-img,
+  .our-work-block__summer-img {
+    height: 300px;
+    margin: 20px 0;
+  }
+
+  .our-work-block__winter-fall,
+  .our-work-block__spring,
+  .our-work-block__summer {
+    width: 300px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 800px) {
+  .our-work-block {
+    flex-direction: column;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .our-work-title {
+    margin: 30px 0;
+  }
+
+  .our-work-block__winter-fall-img,
+  .our-work-block__spring-img,
+  .our-work-block__summer-img {
+    height: 400px;
+    margin: 20px 0;
+  }
+
+  .our-work-block__winter-fall,
+  .our-work-block__spring,
+  .our-work-block__summer {
+    width: 300px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 950px) {
+  .our-work-conteiner {
+    padding: 0 30px;
+    margin-bottom: 30px;
+  }
+
+  .our-work-block {
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .our-work-title {
+    margin: 30px 0;
+  }
+
+  .our-work-block__winter-fall-img,
+  .our-work-block__spring-img,
+  .our-work-block__summer-img {
+    height: 300px;
+    margin: 20px 0;
+  }
+
+  .our-work-block__winter-fall,
+  .our-work-block__spring,
+  .our-work-block__summer {
+    width: 33.333%;
+    margin: 0 10px;
+  }
+}
+
+@media (min-width: 950px) and (max-width: 1250px) {
+  .our-work-conteiner {
+    padding: 0 90px;
+    margin-bottom: 30px;
+  }
+
+  .our-work-block {
+    width: 800px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .our-work-title {
+    margin: 30px 0;
+  }
+
+  .our-work-block__winter-fall-img,
+  .our-work-block__spring-img,
+  .our-work-block__summer-img {
+    height: 400px;
+    margin: 20px 0;
+  }
+
+  .our-work-block__winter-fall,
+  .our-work-block__spring,
+  .our-work-block__summer {
+    margin: 0 10px;
+  }
+}
+
+@media (min-width: 1250px) and (max-width: 1600px) {
+  .our-work-conteiner {
+    padding: 0 120px;
+    margin-bottom: 30px;
+  }
+
+  .our-work-block {
+    width: 1000px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .our-work-title {
+    margin: 30px 0;
+  }
+}
+
+@media (min-width: 1601px) {
+  .our-work-conteiner {
+    padding: 0 160px;
+    margin-bottom: 30px;
+  }
+
+  .our-work-block {
+    width: 1100px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .our-work-title {
+    margin: 30px 0;
+  }
+
+  .our-work-block__winter-fall-img,
+  .our-work-block__spring-img,
+  .our-work-block__summer-img {
+    height: 550px;
+    margin: 20px 0;
+  }
+}
+
+@media (min-width: 1900px) {
+  .our-work-conteiner {
+    padding: 0 160px;
+    margin-bottom: 30px;
+  }
+
+  .our-work-block {
+    width: 1300px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .our-work-title {
+    margin: 30px 0;
+  }
+
+  .our-work-block__winter-fall-img,
+  .our-work-block__spring-img,
+  .our-work-block__summer-img {
+    height: 600px;
+    margin: 20px 0;
+  }
+}

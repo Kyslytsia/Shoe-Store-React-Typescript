@@ -1,0 +1,8 @@
+.passChange {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.passChange h2 {
+  color: #2b2f4c;
+}

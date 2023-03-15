@@ -1,0 +1,30 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: #f3f5f5;
+}
+.phone,
+.email {
+  color: #2b2f4c;
+  font-family: "Montserrat";
+  font-size: 20px;
+}
+.phone,
+.email,
+.instagram,
+.facebook {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+@media (min-width: 375px) and (max-width: 700px) {
+  .footer {
+    flex-direction: column;
+  }
+
+  .email {
+    padding: 10px 0;
+  }
+}

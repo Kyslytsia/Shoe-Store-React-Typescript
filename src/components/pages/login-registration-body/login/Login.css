@@ -1,0 +1,32 @@
+.forms {
+  display: flex;
+  justify-content: space-around;
+}
+.login,
+.registration {
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+}
+.form-title {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.label {
+  width: 80%;
+}
+.input {
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+.form-button {
+  background-color: white;
+  color: #2b2f4c;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 15px;
+  cursor: pointer;
+}

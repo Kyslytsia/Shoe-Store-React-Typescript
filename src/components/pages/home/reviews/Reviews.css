@@ -1,0 +1,92 @@
+.reviews-conteiner {
+  background-image: url("https://mrcobbler.ancorathemes.com/wp-content/uploads/2016/10/background-1.jpg?id=193");
+  background-position: center;
+  background-size: cover;
+  padding: 40px 100px 0;
+}
+.reviews-title {
+  text-align: center;
+  color: white;
+  font-family: "Montserrat";
+  margin: 40px 0 70px;
+}
+.reviews-columns {
+  display: flex;
+}
+.reviews-column {
+  font-family: "Montserrat";
+  width: 30%;
+  padding: 15px;
+  text-align: center;
+}
+.reviews-column p {
+  line-height: 25px;
+}
+.reviews-column p,
+h2 {
+  color: white;
+}
+.reviews-column h2,
+h3 {
+  margin: 0;
+}
+.reviews-column h3 {
+  font-weight: 300;
+  font-size: 15px;
+  color: rgb(242, 237, 166);
+}
+
+@media (min-width: 375px) and (max-width: 700px) {
+  .reviews-conteiner {
+    padding: 40px 30px;
+  }
+
+  .reviews-title {
+    margin: 0 0 30px;
+  }
+
+  .reviews-columns {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .reviews-column {
+    width: 300px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@media (min-width: 701px) {
+  .reviews-conteiner {
+    padding: 40px 60px;
+  }
+
+  .reviews-title {
+    margin: 0 0 30px;
+  }
+
+  .reviews-column {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .reviews-conteiner {
+    padding: 40px 100px 60px;
+  }
+
+  .reviews-title {
+    margin: 0 0 30px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .reviews-conteiner {
+    padding: 40px 200px 60px;
+  }
+
+  .reviews-title {
+    margin: 0 0 30px;
+  }
+}
