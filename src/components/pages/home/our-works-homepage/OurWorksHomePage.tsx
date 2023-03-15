@@ -9,7 +9,11 @@ const OurWorksHomePage: React.FC = () => {
         <div className="our-work-block__winter-fall">
           <div className="our-work-block__winter-fall-img"></div>
           <div className="our-work-button">
-            <Link to="/winter-fall" className="link">
+            <Link
+              to="/winter-fall"
+              className="link"
+              style={{ color: "#2b2f4c" }}
+            >
               winret/fall
             </Link>
           </div>
