@@ -39,7 +39,9 @@ const Header: React.FC = () => {
               </div>
             </li>
 
-            <li className="links__link">about us</li>
+            <Link to="/about-us" className="link">
+              <li className="links__link">about us</li>
+            </Link>
 
             <li className="links__link">
               contacts
