@@ -8,7 +8,11 @@ const Actions: React.FC = () => {
 
   return (
     <div className="actions">
-      <h1 className="actions-title">My actives</h1>
+      {actions.length === 0 ? (
+        ""
+      ) : (
+        <h1 className="actions-title">My actives</h1>
+      )}
 
       <div>
         {actions.map((el) => (
