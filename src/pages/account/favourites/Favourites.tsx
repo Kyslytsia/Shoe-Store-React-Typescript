@@ -15,13 +15,13 @@ const Favorites: React.FC<types.FavouritesProps> = ({ setId }) => {
         {favorites.map((shoe: any) => (
           <div className="card-block" key={shoe.id}>
             <Card
-              name={shoe.name}
-              img={shoe.img}
               id={shoe.id}
-              price={shoe.price}
-              totalPrice={shoe.totalPrice}
-              count={shoe.count}
               setId={setId}
+              img={shoe.img}
+              name={shoe.name}
+              price={shoe.price}
+              count={shoe.count}
+              totalPrice={shoe.totalPrice}
             />
           </div>
         ))}

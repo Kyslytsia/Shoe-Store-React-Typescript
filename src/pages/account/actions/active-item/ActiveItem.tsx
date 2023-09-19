@@ -3,23 +3,23 @@ import * as types from "./type";
 import "./ActiveItem.css";
 
 const ActiveItem: React.FC<types.actionsItemProps> = ({
+  id,
+  img,
   name,
   price,
-  shoeSize,
-  id,
   count,
+  shoeSize,
   totalPrice,
-  img,
 }) => {
   return (
     <div className="active-item">
       <div
         style={{
-          backgroundImage: `url(${img})`,
+          width: "140px",
+          height: "200px",
           backgroundSize: "cover",
           backgroundPosition: "center",
-          height: "200px",
-          width: "140px",
+          backgroundImage: `url(${img})`,
         }}
       ></div>
       <div className="active-item__info">

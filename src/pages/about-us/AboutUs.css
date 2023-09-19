@@ -60,15 +60,7 @@ p {
   background-size: cover;
   height: 350px;
 }
-.image-1 {
-  background-image: url("https://mrcobbler.ancorathemes.com/wp-content/uploads/2016/10/background-5.jpg");
-}
-.image-2 {
-  background-image: url("https://www.qest.org.uk/wp-content/uploads/2021/11/Olu-Fadairo.-Photo-credit-Julian-Calder-2.jpg");
-}
-.image-3 {
-  background-image: url("http://s3.amazonaws.com/liftclient-offloading/dawsons/wp-content/uploads/2017/10/dawson-shoe-repair-leather-conditioning.jpg");
-}
+
 .card__info {
   color: #2b2f4c;
   text-align: center;

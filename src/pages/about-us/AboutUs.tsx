@@ -1,5 +1,7 @@
 import "./AboutUs.css";
 
+import { cobblers } from "./mock";
+
 const AboutUs: React.FC = () => {
   return (
     <div className="about-us">
@@ -40,68 +42,35 @@ const AboutUs: React.FC = () => {
         <h2>Our Cobblers & Craftsmen</h2>
 
         <div className="about-us__block-3__cards">
-          <div className="cards__card">
-            <div className="card__image image-1"></div>
-            <div className="card__info">
-              <h4>Gil Gunderson</h4>
-              <div>
-                <img
-                  className="instagram"
-                  alt="img"
-                  src={require("../../svg/instagram.svg").default}
-                  width="25"
-                ></img>
-                <img
-                  className="facebook"
-                  alt="img"
-                  src={require("../../svg/facebook.svg").default}
-                  width="25"
-                ></img>
-              </div>
-            </div>
-          </div>
+          {cobblers.map((cobbler) => (
+            <div className="cards__card">
+              <div
+                className="card__image"
+                style={{
+                  backgroundImage: `url(${cobbler.img})`,
+                }}
+              ></div>
 
-          <div className="cards__card">
-            <div className="card__image image-2"></div>
-            <div className="card__info">
-              <h4>Harry Shearer</h4>
-              <div>
-                <img
-                  className="instagram"
-                  alt="img"
-                  src={require("../../svg/instagram.svg").default}
-                  width="25"
-                ></img>
-                <img
-                  className="facebook"
-                  alt="img"
-                  src={require("../../svg/facebook.svg").default}
-                  width="25"
-                ></img>
-              </div>
-            </div>
-          </div>
+              <div className="card__info">
+                <h4>{cobbler.name}</h4>
+                <div>
+                  <img
+                    className="instagram"
+                    alt="img"
+                    src={require("../../svg/instagram.svg").default}
+                    width="25"
+                  ></img>
 
-          <div className="cards__card">
-            <div className="card__image image-3"></div>
-            <div className="card__info">
-              <h4>Lionel Hutz</h4>
-              <div>
-                <img
-                  className="instagram"
-                  alt="img"
-                  src={require("../../svg/instagram.svg").default}
-                  width="25"
-                ></img>
-                <img
-                  className="facebook"
-                  alt="img"
-                  src={require("../../svg/facebook.svg").default}
-                  width="25"
-                ></img>
+                  <img
+                    className="facebook"
+                    alt="img"
+                    src={require("../../svg/facebook.svg").default}
+                    width="25"
+                  ></img>
+                </div>
               </div>
             </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>
