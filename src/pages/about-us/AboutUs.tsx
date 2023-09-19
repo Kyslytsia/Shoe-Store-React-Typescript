@@ -43,7 +43,7 @@ const AboutUs: React.FC = () => {
 
         <div className="about-us__block-3__cards">
           {cobblers.map((cobbler) => (
-            <div className="cards__card">
+            <div className="cards__card" key={cobbler.name}>
               <div
                 className="card__image"
                 style={{

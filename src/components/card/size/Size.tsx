@@ -11,6 +11,7 @@ const Size = ({ setShoeSize, setColoredSize, coloredSize }: ShoeSize) => {
     <div className="size">
       {sizes.map((size, index) => (
         <span
+          key={"size" + index}
           style={{
             backgroundColor: coloredSize === index ? " #2b2f4c" : "",
             color: coloredSize === index ? "white" : "",

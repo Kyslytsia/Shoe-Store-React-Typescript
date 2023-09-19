@@ -39,6 +39,7 @@ const Account: React.FC<types.AccountProps> = ({ setId }) => {
 
         {categories.map((category, index) => (
           <div
+            key={category + index}
             onClick={() => handleClick(index)}
             className="acc-categories__category"
           >

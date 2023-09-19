@@ -32,10 +32,10 @@ const CartItemList = ({
           <CartItem
             id={el.id}
             img={el.img}
-            key={el.name}
             name={el.name}
             price={el.price}
             count={el.count}
+            key={el.name + el.id}
             shoeSize={el.shoeSize}
             totalPrice={el.totalPrice}
           />

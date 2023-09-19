@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+import { ShoeInfoProps } from "./types";
+import Size from "../../components/card/size/Size";
 import { useAppSelector, useAppDispatch } from "../../hooks";
 import { showMessage } from "../../components/toast/show-message";
 import { addShoeInCart } from "../../store/account-sclice/accountSlice";
 
 import "./ShoeInfo.css";
-import { ShoeInfoProps } from "./types";
-import Size from "../../components/card/size/Size";
 
 const ShoeInfo = ({ id }: ShoeInfoProps) => {
   const shoes = useAppSelector((state) => state.shoes.value);

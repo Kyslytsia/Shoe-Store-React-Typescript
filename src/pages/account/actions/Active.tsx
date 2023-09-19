@@ -14,11 +14,11 @@ const Actions: React.FC = () => {
         {actions.map((el) => (
           <ActionsItem
             id={el.id}
-            key={el.id}
             img={el.img}
             name={el.name}
             price={el.price}
             count={el.count}
+            key={Math.random()}
             shoeSize={el.shoeSize}
             totalPrice={el.totalPrice}
           />
