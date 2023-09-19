@@ -25,21 +25,21 @@ const NameChange = () => {
 
       <label className="label">
         <input
-          style={{ width: "300px" }}
-          className="input"
           name="name"
           type="text"
           value={name}
-          onChange={(event) => setName(event.target.value)}
+          className="input"
           placeholder="Name"
+          style={{ width: "300px" }}
+          onChange={(event) => setName(event.target.value)}
         />
       </label>
 
       <button
-        className="avatarChangeBtn"
-        onClick={submitName}
         type="button"
+        onClick={submitName}
         style={{ width: "200px" }}
+        className="avatarChangeBtn"
       >
         change name
       </button>

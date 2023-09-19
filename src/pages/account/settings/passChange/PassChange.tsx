@@ -37,33 +37,33 @@ const PassChange = () => {
 
       <label className="label">
         <input
-          style={{ width: "300px" }}
-          className="input"
           name="password"
           type="password"
           value={password}
-          onChange={(event) => setPassword(event.target.value)}
+          className="input"
           placeholder="Password"
+          style={{ width: "300px" }}
+          onChange={(event) => setPassword(event.target.value)}
         />
       </label>
 
       <label className="label">
         <input
-          style={{ width: "300px" }}
-          className="input"
           name="password"
           type="password"
+          className="input"
           value={passwordVerify}
-          onChange={(event) => setVerifyPassword(event.target.value)}
+          style={{ width: "300px" }}
           placeholder="Verify Password"
+          onChange={(event) => setVerifyPassword(event.target.value)}
         />
       </label>
 
       <button
-        onClick={submitPass}
-        className="avatarChangeBtn"
         type="button"
+        onClick={submitPass}
         style={{ width: "200px" }}
+        className="avatarChangeBtn"
       >
         change Password
       </button>
