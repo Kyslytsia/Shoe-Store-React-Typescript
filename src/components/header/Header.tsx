@@ -1,11 +1,13 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
 
-import Cart from "../cart/Cart";
+import Nav from "./nav/Nav";
+
 import Burger from "./burger/Burger";
 import { useAppSelector } from "../../hooks";
 
 import "./Header.css";
+import LoginRegisterBlock from "./login-register-block/LoginRegisterBlock";
 
 const Header: React.FC = () => {
   const user = useAppSelector((state) => state.account.value);
@@ -25,61 +27,9 @@ const Header: React.FC = () => {
         SHOES
       </Link>
 
-      <div className="header-info-block">
-        <nav className="nav">
-          <ul className="links">
-            <li className="links__link">
-              colection
-              <div className="colection">
-                <Link to="/winter-fall" className="link">
-                  <div className="colection__link">зима-осень</div>
-                </Link>
-                <div className="colection__link">весна</div>
-                <div className="colection__link">лето</div>
-              </div>
-            </li>
+      <Nav />
 
-            <Link to="/about-us" className="link">
-              <li className="links__link">about us</li>
-            </Link>
-
-            <li className="links__link">
-              contacts
-              <div className="contacts">
-                <div className="colection__link">
-                  Address: 37372 Hood St Sandy, OR 97123
-                </div>
-                <div className="colection__link">Phone: 800-456-7890</div>
-                <div className="colection__link">Email: info@yoursite.com</div>
-              </div>
-            </li>
-          </ul>
-        </nav>
-
-        <div className="login-register-block">
-          {img && <img className="headerAvatar" src={img} alt="img" />}
-
-          <div className="login-register">
-            {isLogin ? (
-              <Link className="link" to="/account">
-                <div className="user-name" style={{ color: "#2b2f4c" }}>
-                  {"Hi, " + user.name}
-                </div>
-              </Link>
-            ) : (
-              <Link
-                style={{ color: "#2b2f4c" }}
-                className="link"
-                to="/login-registration-body"
-              >
-                LOGIN
-              </Link>
-            )}
-          </div>
-
-          <Cart />
-        </div>
-      </div>
+      <LoginRegisterBlock name={user.name} img={img} isLogin={isLogin} />
     </header>
   );
 };
