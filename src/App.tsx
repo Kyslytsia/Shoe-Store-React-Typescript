@@ -5,13 +5,13 @@ import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import { Toast } from "./components/toast/Toast";
 import ScrollToTop from "./components/scrollToTop";
-import HomePage from "./components/pages/home/Home";
-import Account from "./components/pages/account/Account";
-import AboutUs from "./components/pages/about-us/AboutUs";
-import ShoeInfo from "./components/pages/shoe-info/ShoeInfo";
-import WinterFall from "./components/pages/winter-fall/WinterFall";
-import AboutUsHomePage from "./components/pages/home/about-us-homepage/AboutUsHomePage";
-import RegistrationBody from "./components/pages/login-registration-body/LoginRegistrationBody";
+import HomePage from "./pages/home/Home";
+import Account from "./pages/account/Account";
+import AboutUs from "./pages/about-us/AboutUs";
+import ShoeInfo from "./pages/shoe-info/ShoeInfo";
+import WinterFall from "./pages/winter-fall/WinterFall";
+import AboutUsHomePage from "./pages/home/about-us-homepage/AboutUsHomePage";
+import RegistrationBody from "./pages/login-registration-body/LoginRegistrationBody";
 
 import "./fonts/fonts.css";
 
