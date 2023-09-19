@@ -93,10 +93,11 @@ p {
   }
 
   .about-us__block-3__cards {
+    display: flex;
     flex-direction: column;
     padding: 0;
     margin: 0 auto;
-    width: 375px;
+    width: 360px;
   }
 
   .cards__card {
