@@ -6,19 +6,11 @@ import {
   deleteFavoriteShoe,
 } from "../../store/account-sclice/accountSlice";
 
+import { FavoriteIconProps } from "./types";
+
 import "./FavoriteIcon.css";
 
-type favoriteIconProps = {
-  name: string;
-  price: number;
-  shoeSize: number | null;
-  id: number;
-  count: number;
-  totalPrice: number;
-  img: string;
-};
-
-const FavoriteIcon: React.FC<favoriteIconProps> = ({
+const FavoriteIcon: React.FC<FavoriteIconProps> = ({
   id,
   price,
   shoeSize,

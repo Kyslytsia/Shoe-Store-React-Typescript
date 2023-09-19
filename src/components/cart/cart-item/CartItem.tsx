@@ -2,26 +2,18 @@ import Count from "../../count/Count";
 import { useAppDispatch } from "../../../hooks";
 import { deleteShoeInCart } from "../../../store/account-sclice/accountSlice";
 
+import { CartItemProps } from "./types";
+
 import "./CartItem.css";
 
-type cartItemProps = {
-  name: string;
-  price: number;
-  shoeSize: number | null;
-  id: number;
-  count: number;
-  totalPrice: number;
-  img: string;
-};
-
-const CartItem: React.FC<cartItemProps> = ({
+const CartItem: React.FC<CartItemProps> = ({
+  id,
+  img,
   name,
   price,
-  shoeSize,
-  id,
   count,
+  shoeSize,
   totalPrice,
-  img,
 }) => {
   const dispatch = useAppDispatch();
 
@@ -45,11 +37,11 @@ const CartItem: React.FC<cartItemProps> = ({
         </div>
 
         <img
-          onClick={() => dispatch(deleteShoeInCart({ id, shoeSize }))}
-          className="delete"
           alt="img"
-          src={require("../../../svg/delete.svg").default}
           width="25"
+          className="delete"
+          src={require("../../../svg/delete.svg").default}
+          onClick={() => dispatch(deleteShoeInCart({ id, shoeSize }))}
         ></img>
       </div>
     </div>

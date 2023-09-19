@@ -5,6 +5,7 @@ const Footer: React.FC = () => {
     <div className="footer">
       <div className="phone">Phone: 800-456-7890</div>
       <div className="email">Email: info@yoursite.com</div>
+
       <div>
         <img
           className="instagram"
@@ -12,6 +13,7 @@ const Footer: React.FC = () => {
           src={require("../../svg/instagram.svg").default}
           width="25"
         ></img>
+
         <img
           className="facebook"
           alt="img"

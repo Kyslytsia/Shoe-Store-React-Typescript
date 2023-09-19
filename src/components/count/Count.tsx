@@ -1,16 +1,11 @@
 import { useAppDispatch } from "../../hooks";
 import { countPlus, countMinus } from "../../store/account-sclice/accountSlice";
 
+import { CountProps } from "./types";
+
 import "./Count.css";
 
-type countProps = {
-  count: number;
-  id: number;
-  price: number;
-  shoeSize: number | null;
-};
-
-const Count: React.FC<countProps> = ({ count, id, price, shoeSize }) => {
+const Count: React.FC<CountProps> = ({ count, id, price, shoeSize }) => {
   const dispatch = useAppDispatch();
 
   const increase = (id: number) => {

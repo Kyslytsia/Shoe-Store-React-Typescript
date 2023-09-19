@@ -5,9 +5,9 @@
 
 .container .card {
   position: relative;
+  margin: 7px;
   width: 316px;
   height: 450px;
-  margin: 7px;
   border: 4px solid white;
   border-radius: 7px;
   overflow: hidden;
