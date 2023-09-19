@@ -4,6 +4,11 @@
   margin: 0 20px 20px;
 }
 
+.actions-title {
+  margin-left: 40px;
+  color: #2b2f4c;
+}
+
 .actions div {
   flex-wrap: wrap;
   display: flex;

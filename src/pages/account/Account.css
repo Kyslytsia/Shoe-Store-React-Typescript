@@ -1,23 +1,38 @@
-.tab {
+.acc-body {
+  display: flex;
+  padding-top: 90px;
+}
+
+.acc-categories {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  position: fixed;
-  margin: 0 auto;
+  padding-top: 20px;
+  min-height: 620px;
+  min-width: 300px;
+}
+
+.acc-categories__category {
+  margin-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: #2b2f4c;
+  cursor: pointer;
+}
+
+.acc-pages {
+  padding-bottom: 50px;
+  width: 100%;
+  background-color: #f3f5f5;
 }
 
 @media (min-width: 375px) and (max-width: 700px) {
-  .custom-box-main {
+  .acc-body {
     flex-direction: column;
   }
 
-  .custom-tabs {
+  .acc-categories {
     width: 100%;
-  }
-}
-
-@media (min-width: 701px) {
-  .custom-tabs {
-    width: 300px;
+    min-height: 420px;
   }
 }

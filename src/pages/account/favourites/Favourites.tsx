@@ -9,7 +9,7 @@ const Favorites: React.FC<types.FavouritesProps> = ({ setId }) => {
 
   return (
     <>
-      <h1 style={{ marginLeft: "40px" }}>Favorites</h1>
+      <h1 className="favorites-title">Favorites</h1>
 
       <div className="favorites-conteiner">
         {favorites.map((shoe: any) => (

@@ -5,6 +5,11 @@
   margin-left: 40px;
 }
 
+.favorites-title {
+  margin-left: 40px;
+  color: #2b2f4c;
+}
+
 @media (min-width: 375px) and (max-width: 700px) {
   .favorites-conteiner {
     margin-left: 0;
