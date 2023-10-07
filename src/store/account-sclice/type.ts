@@ -1,104 +1,37 @@
-export type state = {
-  value: {
-    name: string;
-    email: string;
-    favorites: {
-      name: string;
-      price: number;
-      shoeSize: number | null;
-      id: number;
-      count: number;
-      totalPrice: number;
-      img: string;
-    }[];
-    status: boolean;
-    img?: string;
-    cart: {
-      name: string;
-      price: number;
-      shoeSize: number | null;
-      id: number;
-      count: number;
-      totalPrice: number;
-      img: string;
-    }[];
-    active: {
-      name: string;
-      price: number;
-      shoeSize: number | null;
-      id: number;
-      count: number;
-      totalPrice: number;
-      img: string;
-    }[];
-  };
-};
+export interface ShoeDataProps {
+  name: string;
+  price: number;
+  shoeSize: number | null;
+  id: number;
+  count: number;
+  totalPrice: number;
+  img: string;
+}
+export interface State {
+  value: LoginProps;
+}
 
-export type loginProps = {
+export interface LoginProps {
   name: string;
   email: string;
-  favorites: {
-    name: string;
-    price: number;
-    shoeSize: number | null;
-    id: number;
-    count: number;
-    totalPrice: number;
-    img: string;
-  }[];
+  favorites: ShoeDataProps[];
   status: boolean;
   img?: string;
-  cart: {
-    name: string;
-    price: number;
-    shoeSize: number | null;
-    id: number;
-    count: number;
-    totalPrice: number;
-    img: string;
-  }[];
-  active: {
-    name: string;
-    price: number;
-    shoeSize: number | null;
-    id: number;
-    count: number;
-    totalPrice: number;
-    img: string;
-  }[];
-};
+  cart: ShoeDataProps[];
+  active: ShoeDataProps[];
+}
 
-export type countProps = {
+export interface CountProps {
   count: number;
   id: number;
   price: number;
   totalPrice?: number;
   shoeSize: number | null;
-};
+}
 
-export type addShoeInCartProps = {
-  name: string;
-  price: number;
-  shoeSize: number | null;
-  id: number;
-  count: number;
-  totalPrice: number;
-  img: string;
-};
-
-export type addShoeInFavoritestProps = {
-  name: string;
-  price: number;
-  shoeSize: number | null;
-  id: number;
-  count: number;
-  totalPrice: number;
-  img: string;
-};
-
-export type deleteShoeInCartProps = {
+export interface DeleteShoeInCartProps {
   id: number;
   shoeSize: number | null;
   name?: string;
   price?: number;
-};
+}

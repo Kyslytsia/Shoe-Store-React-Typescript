@@ -1,18 +1,17 @@
 import storage from "redux-persist/lib/storage";
 import {
-  persistStore,
-  persistReducer,
   FLUSH,
   PAUSE,
   PURGE,
   PERSIST,
   REGISTER,
   REHYDRATE,
+  persistStore,
+  persistReducer,
 } from "redux-persist";
 import { configureStore, combineReducers } from "@reduxjs/toolkit";
 
 import userSclice from "./user-sclice/userSlice";
-import shoesSlice from "./shoe-slice/shoesSlice";
 import accountSlice from "./account-sclice/accountSlice";
 
 const persistConfig = {
@@ -21,7 +20,6 @@ const persistConfig = {
 };
 
 const rootReducer = combineReducers({
-  shoes: shoesSlice,
   account: accountSlice,
   users: userSclice,
 });

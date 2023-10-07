@@ -7,8 +7,8 @@ import { showMessage } from "../../../../components/toast/show-message";
 import "./PassChange.css";
 
 const PassChange = () => {
-  const [password, setPassword] = useState<string>();
-  const [passwordVerify, setVerifyPassword] = useState<string>();
+  const [password, setPassword] = useState<string>("");
+  const [passwordVerify, setVerifyPassword] = useState<string>("");
 
   const email = useAppSelector((state) => state.account.value.email);
   const dispatch = useAppDispatch();

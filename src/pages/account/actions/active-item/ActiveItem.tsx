@@ -2,7 +2,7 @@ import * as types from "./type";
 
 import "./ActiveItem.css";
 
-const ActiveItem: React.FC<types.actionsItemProps> = ({
+const ActiveItem: React.FC<types.ActionsItemProps> = ({
   id,
   img,
   name,

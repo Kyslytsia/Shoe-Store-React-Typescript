@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-import usersData from "../../usersData";
 import * as types from "./type";
+import usersData from "../../usersData";
 
 export const usersSlice = createSlice({
   name: "users",
@@ -10,7 +10,7 @@ export const usersSlice = createSlice({
   },
 
   reducers: {
-    addNewUser: (state, action: PayloadAction<types.addUser>) => {
+    addNewUser: (state, action: PayloadAction<types.AddUserProps>) => {
       state.value = [
         ...state.value,
         {
@@ -25,7 +25,7 @@ export const usersSlice = createSlice({
         },
       ];
     },
-    setUserInfo: (state, action) => {
+    setUserInfo: (state, action: PayloadAction<types.UserInfoProps>) => {
       state.value.find((el) => {
         if (el.email === action.payload.email) {
           el.name = action.payload.name;
@@ -39,7 +39,7 @@ export const usersSlice = createSlice({
         return "";
       });
     },
-    changePass: (state, action) => {
+    changePass: (state, action: PayloadAction<types.ChangePassProps>) => {
       state.value.find((el) => {
         if (el.email === action.payload.email) {
           el.password = action.payload.password;

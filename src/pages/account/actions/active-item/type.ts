@@ -1,9 +1,9 @@
-export type actionsItemProps = {
+export interface ActionsItemProps {
+  id: number;
+  img: string;
   name: string;
   price: number;
-  shoeSize: number | null;
-  id: number;
   count: number;
   totalPrice: number;
-  img: string;
-};
+  shoeSize: number | null;
+}

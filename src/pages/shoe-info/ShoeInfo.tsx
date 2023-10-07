@@ -2,15 +2,15 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import { ShoeInfoProps } from "./types";
+import { shoesData } from "../../shoesData";
+import { useAppDispatch } from "../../hooks";
 import Size from "../../components/card/size/Size";
-import { useAppSelector, useAppDispatch } from "../../hooks";
 import { showMessage } from "../../components/toast/show-message";
 import { addShoeInCart } from "../../store/account-sclice/accountSlice";
 
 import "./ShoeInfo.css";
 
 const ShoeInfo = ({ id }: ShoeInfoProps) => {
-  const shoes = useAppSelector((state) => state.shoes.value);
   const [shoeSize, setShoeSize] = useState<number | null>(null);
   const [coloredSize, setColoredSize] = useState<number | null>(null);
 
@@ -29,7 +29,7 @@ const ShoeInfo = ({ id }: ShoeInfoProps) => {
         position: "top-center",
       });
     } else {
-      shoes.map((shoe) => {
+      shoesData.map((shoe) => {
         if (shoe.id === id) {
           dispatch(addShoeInCart({ ...shoe, shoeSize }));
           showMessage.success("Thank you for your purchase", {
@@ -43,7 +43,7 @@ const ShoeInfo = ({ id }: ShoeInfoProps) => {
 
   return (
     <div className="shoe-info">
-      {shoes.map((shoe) => {
+      {shoesData.map((shoe) => {
         if (shoe.id === id) {
           return (
             <div className="shoe-block" key={shoe.name}>

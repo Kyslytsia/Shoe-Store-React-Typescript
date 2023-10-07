@@ -3,7 +3,7 @@ import { PayloadAction } from "@reduxjs/toolkit";
 
 import * as types from "./type";
 
-const initialState: types.state = {
+const initialState: types.State = {
   value: {
     name: "",
     email: "",
@@ -20,7 +20,7 @@ export const accountSlice = createSlice({
   initialState,
 
   reducers: {
-    login: (state, action: PayloadAction<types.loginProps>) => {
+    login: (state, action: PayloadAction<types.LoginProps>) => {
       state.value = {
         name: action.payload.name,
         email: action.payload.email,
@@ -42,7 +42,7 @@ export const accountSlice = createSlice({
         active: [],
       };
     },
-    countPlus: (state, action: PayloadAction<types.countProps>) => {
+    countPlus: (state, action: PayloadAction<types.CountProps>) => {
       state.value.cart.map((el) => {
         if (
           el.id === action.payload.id &&
@@ -55,7 +55,7 @@ export const accountSlice = createSlice({
         return "";
       });
     },
-    countMinus: (state, action: PayloadAction<types.countProps>) => {
+    countMinus: (state, action: PayloadAction<types.CountProps>) => {
       state.value.cart.map((el) => {
         if (
           el.id === action.payload.id &&
@@ -68,24 +68,21 @@ export const accountSlice = createSlice({
         return "";
       });
     },
-    addShoeInCart: (state, action: PayloadAction<types.addShoeInCartProps>) => {
+    addShoeInCart: (state, action: PayloadAction<types.ShoeDataProps>) => {
       if (!state.value.cart.includes(action.payload)) {
         state.value.cart.push(action.payload);
       }
     },
     deleteShoeInCart: (
       state,
-      action: PayloadAction<types.deleteShoeInCartProps>
+      action: PayloadAction<types.DeleteShoeInCartProps>
     ) => {
       state.value.cart = state.value.cart.filter(
         (el) =>
           el.shoeSize !== action.payload.shoeSize || el.id !== action.payload.id
       );
     },
-    addFavoriteShoe: (
-      state,
-      action: PayloadAction<types.addShoeInFavoritestProps>
-    ) => {
+    addFavoriteShoe: (state, action: PayloadAction<types.ShoeDataProps>) => {
       if (!state.value.favorites.includes(action.payload)) {
         state.value.favorites.push(action.payload);
       }
@@ -101,7 +98,7 @@ export const accountSlice = createSlice({
     changeName: (state, action: PayloadAction<string>) => {
       state.value.name = action.payload;
     },
-    addShoeInActive: (state, action) => {
+    addShoeInActive: (state, action: PayloadAction<types.ShoeDataProps[]>) => {
       state.value.active = state.value.active.concat(action.payload);
       state.value.cart = [];
     },

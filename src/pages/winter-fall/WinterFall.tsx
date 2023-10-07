@@ -1,21 +1,16 @@
+import { WinterFallProps } from "./types";
+import { shoesData } from "../../shoesData";
 import Card from "../../components/card/Card";
-import { useAppSelector } from "../../hooks";
 
 import "./WinterFall.css";
 
-type WinterFallProps = {
-  setId: React.Dispatch<React.SetStateAction<number | undefined>>;
-};
-
 const WinterFall: React.FC<WinterFallProps> = ({ setId }) => {
-  const shoes = useAppSelector((state) => state.shoes.value);
-
   return (
     <div className="winter-fall">
       <h1>Winter/Fall</h1>
 
       <div className="winter-fall__conteiner">
-        {shoes.map((shoe) => (
+        {shoesData.map((shoe) => (
           <div className="card-block" key={shoe.id}>
             <Card
               name={shoe.name}

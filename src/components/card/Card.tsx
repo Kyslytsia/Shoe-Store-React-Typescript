@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import Size from "./size/Size";
-import { cardProps } from "./type";
+import { CardProps } from "./type";
 import { useAppDispatch } from "../../hooks";
 import { showMessage } from "../toast/show-message";
 import FavoriteIcon from "../favorite-icon/FavoriteIcon";
@@ -10,7 +10,7 @@ import { addShoeInCart } from "../../store/account-sclice/accountSlice";
 
 import "./Card.css";
 
-const Card: React.FC<cardProps> = ({
+const Card = ({
   id,
   img,
   name,
@@ -18,7 +18,7 @@ const Card: React.FC<cardProps> = ({
   count,
   setId,
   totalPrice,
-}) => {
+}: CardProps) => {
   const [shoeSize, setShoeSize] = useState<number | null>(null);
   const [coloredSize, setColoredSize] = useState<number | null>(null);
 

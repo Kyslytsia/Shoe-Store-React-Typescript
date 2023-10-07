@@ -10,7 +10,7 @@ import { addShoeInActive } from "../../store/account-sclice/accountSlice";
 
 import "./Cart.css";
 
-const Cart: React.FC = () => {
+const Cart = () => {
   const [state, setState] = React.useState({
     right: false,
   });

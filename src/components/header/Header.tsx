@@ -9,7 +9,7 @@ import { useAppSelector } from "../../hooks";
 import "./Header.css";
 import LoginRegisterBlock from "./login-register-block/LoginRegisterBlock";
 
-const Header: React.FC = () => {
+const Header = () => {
   const user = useAppSelector((state) => state.account.value);
   const img = useAppSelector((state) => state.account.value.img);
   const isLogin = useAppSelector((state) => state.account.value.status);

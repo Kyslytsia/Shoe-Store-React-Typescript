@@ -1,9 +1,9 @@
-export interface cardProps {
-  name: string;
-  img: string;
+export interface CardProps {
   id: number;
+  img: string;
+  name: string;
+  count: number;
   price: number;
   totalPrice: number;
-  count: number;
   setId: React.Dispatch<React.SetStateAction<number | undefined>>;
 }

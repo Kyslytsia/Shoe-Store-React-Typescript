@@ -5,15 +5,15 @@ export type Position = "top" | "left" | "bottom" | "right";
 export interface CartItemListProps {
   position: Position;
   totalPrice: number;
-  cartData: cartData[];
   addToActive: () => void;
+  cartData: CartDataProps[];
   isOpenCart: (
     position: Position,
     open: boolean
   ) => MouseEventHandler<HTMLDivElement> | undefined;
 }
 
-export interface cartData {
+export interface CartDataProps {
   id: number;
   img: string;
   name: string;

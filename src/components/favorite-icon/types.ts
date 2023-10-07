@@ -1,4 +1,4 @@
-export type FavoriteIconProps = {
+export interface FavoriteIconProps {
   id: number;
   img: string;
   name: string;
@@ -6,4 +6,4 @@ export type FavoriteIconProps = {
   price: number;
   totalPrice: number;
   shoeSize: number | null;
-};
+}
