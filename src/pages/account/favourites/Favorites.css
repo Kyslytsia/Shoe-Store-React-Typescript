@@ -16,9 +16,3 @@
     margin-left: 0;
   }
 }
-
-@media (min-width: 1890px) {
-  .favorites-conteiner {
-    height: 100vh;
-  }
-}
