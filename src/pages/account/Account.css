@@ -35,5 +35,6 @@
 
   .acc-categories {
     width: 100%;
+    min-height: auto;
   }
 }
