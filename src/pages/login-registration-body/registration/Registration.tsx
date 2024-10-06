@@ -1,5 +1,5 @@
-import { useNavigate } from "react-router-dom";
 import { FormEventHandler, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 import { useAppDispatch, useAppSelector } from "../../../hooks";
 import { addNewUser } from "../../../store/user-sclice/userSlice";

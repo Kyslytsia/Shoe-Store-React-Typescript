@@ -3,9 +3,9 @@ import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
 
 import { Position } from "./types";
+import BurgerNav from "./burger-nav/BurgerNav";
 
 import "./Burger.css";
-import BurgerNav from "./burger-nav/BurgerNav";
 
 const Burger = () => {
   const TemporaryDrawer = () => {

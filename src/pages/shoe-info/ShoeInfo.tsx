@@ -36,6 +36,7 @@ const ShoeInfo = ({ id }: ShoeInfoProps) => {
             position: "top-center",
           });
         }
+
         return "";
       });
     }
@@ -53,6 +54,7 @@ const ShoeInfo = ({ id }: ShoeInfoProps) => {
                   backgroundImage: `url(${shoe.img})`,
                 }}
               ></div>
+
               <div className="shoe-block__info">
                 <h1>{shoe.name}</h1>
 
@@ -80,6 +82,7 @@ const ShoeInfo = ({ id }: ShoeInfoProps) => {
                     <button className="button" onClick={addShoe}>
                       buy
                     </button>
+
                     <h2>price: {shoe.price}$</h2>
                   </div>
                 </div>

@@ -10,15 +10,15 @@ const Footer: React.FC = () => {
         <img
           className="instagram"
           alt="img"
-          src={require("../../svg/instagram.svg").default}
           width="25"
+          src={require("../../svg/instagram.svg").default}
         ></img>
 
         <img
           className="facebook"
           alt="img"
-          src={require("../../svg/facebook.svg").default}
           width="25"
+          src={require("../../svg/facebook.svg").default}
         ></img>
       </div>
     </div>

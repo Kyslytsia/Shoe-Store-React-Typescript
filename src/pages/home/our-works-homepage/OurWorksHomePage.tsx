@@ -9,6 +9,7 @@ const OurWorksHomePage: React.FC = () => {
       <div className="our-work-block">
         <div className="our-work-block__winter-fall">
           <div className="our-work-block__winter-fall-img"></div>
+
           <div className="our-work-button">
             <Link
               to="/winter-fall"
@@ -22,6 +23,7 @@ const OurWorksHomePage: React.FC = () => {
 
         <div className="our-work-block__spring">
           <div className="our-work-block__spring-img"></div>
+
           <div className="our-work-button">
             <Link
               to="/winter-fall"
@@ -35,6 +37,7 @@ const OurWorksHomePage: React.FC = () => {
 
         <div className="our-work-block__summer">
           <div className="our-work-block__summer-img"></div>
+
           <div className="our-work-button">
             <Link
               to="/winter-fall"
