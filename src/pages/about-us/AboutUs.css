@@ -142,6 +142,11 @@ p {
     height: 700px;
     margin-bottom: 30px;
   }
+
+  .card__image {
+    height: 550px;
+  }
+
   .image-1,
   .image-2,
   .image-3 {
@@ -202,9 +207,14 @@ p {
 
   .cards__card {
     width: 500px;
-    height: 800px;
+    height: 700px;
     margin-bottom: 30px;
   }
+
+  .card__image {
+    height: 550px;
+  }
+
   .image-1,
   .image-2,
   .image-3 {
