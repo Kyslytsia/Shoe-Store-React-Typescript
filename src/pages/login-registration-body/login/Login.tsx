@@ -35,8 +35,6 @@ const Login: React.FC = () => {
 
   return (
     <form className="login" onSubmit={submitForm}>
-      <div className="form-title">Login</div>
-
       <label className="label">
         <input
           className="input"

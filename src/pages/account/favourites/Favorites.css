@@ -19,6 +19,6 @@
 
 @media (min-width: 1890px) {
   .favorites-conteiner {
-    height: 1000px;
+    height: 100vh;
   }
 }

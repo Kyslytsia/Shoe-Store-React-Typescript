@@ -1,12 +1,9 @@
-import * as React from "react";
 import { useState } from "react";
 
 import Login from "./login/Login";
 import Registration from "./registration/Registration";
 
 import "./LoginRegistrationBody.css";
-
-const tabs = ["Login", "Registration"];
 
 function LoginRegistrationBody() {
   const [index, setIndex] = useState<number>(0);
@@ -18,7 +15,7 @@ function LoginRegistrationBody() {
     <div className="login-registration">
       <div className="login-registration__body">
         <div className="body-nav">
-          {tabs.map((tab, i) => (
+          {["Login", "Registration"].map((tab, i) => (
             <div
               onClick={() => hendleClick(i)}
               className={

@@ -4,6 +4,7 @@
 }
 .login,
 .registration {
+  padding: 10px 5px;
   margin: 0 auto;
   box-sizing: border-box;
   width: 100%;

@@ -54,49 +54,47 @@ const Registration: React.FC = () => {
 
   return (
     <form className="registration" onSubmit={submitForm}>
-      <div className="form-title">Registration</div>
-
       <label className="label">
         <input
-          className="input"
-          type="text"
           name="name"
+          type="text"
           value={userName}
-          onChange={(event) => setUserName(event.target.value)}
+          className="input"
           placeholder="Name"
+          onChange={(event) => setUserName(event.target.value)}
         />
       </label>
 
       <label className="label">
         <input
-          className="input"
           type="email"
           name="email"
+          className="input"
           value={userEmail}
-          onChange={(event) => setUserEmail(event.target.value)}
           placeholder="Email"
+          onChange={(event) => setUserEmail(event.target.value)}
         />
       </label>
 
       <label className="label">
         <input
-          className="input"
           name="password"
           type="password"
+          className="input"
           value={userPassword}
-          onChange={(event) => setUserPassword(event.target.value)}
           placeholder="Password"
+          onChange={(event) => setUserPassword(event.target.value)}
         />
       </label>
 
       <label className="label">
         <input
+          type="password"
           className="input"
           name="verify-password"
-          type="password"
           value={userPasswordVerify}
-          onChange={(event) => setUserPasswordVerify(event.target.value)}
           placeholder="Verify Password"
+          onChange={(event) => setUserPasswordVerify(event.target.value)}
         />
       </label>
 

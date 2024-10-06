@@ -11,8 +11,14 @@ const Nav = () => {
             <Link to="/winter-fall" className="link">
               <div className="colection__link">зима-осень</div>
             </Link>
-            <div className="colection__link">весна</div>
-            <div className="colection__link">лето</div>
+
+            <Link to="/winter-fall" className="link">
+              <div className="colection__link">весна</div>
+            </Link>
+
+            <Link to="/winter-fall" className="link">
+              <div className="colection__link">лето</div>
+            </Link>
           </div>
         </li>
 
